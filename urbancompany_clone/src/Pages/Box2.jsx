@@ -14,15 +14,12 @@ export default function Box1({ image, title, id }) {
       <Link>
         <Center>
           <Image
+            boxSize="200px"
+            objectFit="cover"
             src={image}
             alt="logo"
-            w={
-              id == 2
-                ? { base: "15%", lg: "24%" }
-                : { base: "18%", lg: "30%" } && id == 8
-                ? { base: "25%", lg: "40%" }
-                : { base: "18%", lg: "30%" }
-            }
+            w={id === "6" ? "50%" : "100%" }
+            h={id === "6" ? "10%" : "40%"}
           />
         </Center>
       </Link>
