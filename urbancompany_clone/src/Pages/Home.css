@@ -25,14 +25,9 @@
   z-index: 2;
 }
 #box1 {
-  width: "50%";
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 460px;
-  left: 20%;
+  /* position: absolute;
+  top: 460px; */
+ 
 }
 
 #box2{
@@ -44,3 +39,8 @@
   align-items: center;
     margin-top: 17%;
 }
+
+.total{
+  background-color: rgb(214, 235, 228);
+}
+
