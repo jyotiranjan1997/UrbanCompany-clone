@@ -16,73 +16,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import "./Home.css";
-import Box1 from "./Box";
-import Box2 from "./Box2";
 
-let arr = [
-  {
-    ID: "0",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757635235-1a139e.png",
-    title: "Salon for Women",
-  },
-  {
-    ID: "1",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png",
-    title: "Hair, Skin & Nails",
-  },
-  {
-    ID: "2",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png",
-    title: "Women's Therapies",
-  },
-  {
-    ID: "3",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png",
-    title: "Saloon for Men",
-  },
-  {
-    ID: "4",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png",
-    title: "Men's Therapies",
-  },
-];
-let arr2 = [
-  {
-    ID: "5",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_72d18950.png",
-    title: "Appliance Repair",
-  },
-  {
-    ID: "6",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1631679515206-a69389.png",
-    title: "Home Painting",
-  },
-  {
-    ID: "7",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_6b1f5250.png",
-    title: "Cleaning & Pest",
-  },
-  {
-    ID: "8",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1641213886588-90a903.png",
-    title: "Disinfection",
-  },
-  {
-    ID: "9",
-    image:
-      "https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_6fbad370.png",
-    title: "Home Repairs",
-  },
-];
+import Box2 from "./Box2";
+import Navbar2 from "../Components/Navbar2";
+import Navbar3 from "../Components/Navbar3";
+
+
+
 
 let arr3 = [
   {
@@ -222,20 +162,7 @@ export default function Home() {
           position="absolute"
           top="470px"
         >
-          <Grid
-            gap="6"
-            justifyContent="center"
-            templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(5, 1fr)" }}
-            bg="white"
-            p={{ base: 3, lg: 6 }}
-            mt="20px"
-            boxShadow="2xl"
-            rounded="md"
-          >
-            {arr.map((el) => (
-              <Box1 image={el.image} title={el.title} id={el.ID} />
-            ))}
-          </Grid>
+            <Navbar2  />
         </Container>
 
         <Container
@@ -244,20 +171,7 @@ export default function Home() {
           p={8}
         >
           <Heading mb="15%">Home Services</Heading>
-          <Grid
-            templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(5, 1fr)" }}
-            gap={{ base: 4, lg: 10 }}
-            justifyContent="center"
-            bg="white"
-            p={{ base: 3, lg: 6 }}
-            mt="20px"
-            boxShadow="2xl"
-            rounded="md"
-          >
-            {arr2.map((el, i) => (
-              <Box1 image={el.image} title={el.title} id={el.ID} />
-            ))}
-          </Grid>
+          <Navbar3 />
         </Container>
       </Flex>
       <Flex
@@ -313,7 +227,7 @@ export default function Home() {
           </Grid>
         </Container>
       </Flex>
-
+{/* //files */}
       <Flex
         mt="20px"
         bg="white"

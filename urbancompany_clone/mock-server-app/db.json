@@ -1,0 +1,348 @@
+{
+  "selection1": [
+    {
+      "head1": "Bestseller Packages"
+    },
+    {
+      "name": "Face Detox",
+      "rating": "4.78",
+      "price": "₹1,079",
+      "details": "Face & neck bleach"
+    },
+    {
+      "name": "Full Body Indulgence",
+      "rating": "4.77",
+      "price": "₹4,029",
+      "details": "Eyebrow threading"
+    },
+    {
+      "name": "Wax and Glow [RICA regular waxing]",
+      "rating": "4.78",
+      "price": "₹2,379",
+      "details": "Full arms + Underarms (RICA)"
+    },
+    {
+      "name": "Wax & glow",
+      "rating": "4.77",
+      "price": "₹3,359",
+      "details": "Full legs RICA"
+    },
+    {
+      "name": "Full chocolate | chocolate roll-on waxing",
+      "rating": "4.78",
+      "price": "₹849",
+      "details": "Eyebrow threading"
+    },
+    {
+      "name": "Mani pedi delight",
+      "rating": "4.76",
+      "price": "₹1,949",
+      "details": "Eyebrow threading"
+    },
+    {
+      "name": "Full RICA roll-on waxing",
+      "rating": "4.78",
+      "price": "₹1,349",
+      "details": "Eyebrow threading"
+    },
+    {
+      "head2": "Make your own package"
+    },
+    {
+      "name": "Make your own package - roll on special",
+      "rating": "4.78",
+      "price": "₹1,490",
+      "details": "Full Legs (No Bikini/Brazilian) (Chocolate Roll-on)"
+    },
+    {
+      "name": "Make Your Own Package",
+      "rating": "4.78",
+      "price": "₹2,079",
+      "details": "Elysian Pinacolada Fruit cleanup"
+    },
+    {
+      "head3": "Waxing"
+    },
+    {
+      "name": "Roll-on special (full arms + full legs + underarms)",
+      "rating": "4.81",
+      "price": "Starts at ₹849",
+      "details": "Choose from chocolate Roll-on & RICA Roll-on"
+    },
+    {
+      "name": "Full arms + underarms",
+      "rating": "4.79",
+      "price": "Starts at ₹309",
+      "details": "We use RICA peel-off for underarms waxing"
+    },
+    {
+      "name": "Full legs waxing",
+      "rating": "4.79",
+      "price": "Starts at ₹349"
+    },
+    {
+      "name": "Full body",
+      "rating": "4.81",
+      "price": "Starts at ₹1,399",
+      "details": "Covers full arms, full legs, underarms, stomach & back"
+    },
+    {
+      "name": "Stomach",
+      "rating": "4.78",
+      "price": "Starts at ₹299",
+      "details": "Covers the area from below bust to pelvis"
+    },
+    {
+      "name": "Back",
+      "rating": "4.83",
+      "price": "Starts at ₹449",
+      "details": "Covers the area from shoulders to pelvis"
+    },
+    {
+      "name": "Underarms",
+      "rating": "4.75",
+      "price": "Starts at ₹49",
+      "details": "Choose from RICA peel-off & honey wax"
+    },
+    {
+      "name": "Bikini",
+      "rating": "4.83",
+      "price": "Starts at ₹949",
+      "details": "Choose from RICA peel-off & honey wax"
+    },
+    {
+      "name": "Bikini line",
+      "rating": "4.84",
+      "price": "Starts at ₹249",
+      "details": "Choose from RICA peel-off & honey wax"
+    },
+    {
+      "name": "Half legs waxing",
+      "rating": "4.76",
+      "price": "Starts at ₹199",
+      "details": "Choose from regular RICA & honey wax"
+    },
+    {
+      "name": "Half arms",
+      "rating": "4.76",
+      "price": "Starts at ₹199",
+      "details": "Choose from regular RICA & honey wax"
+    },
+    {
+      "name": "Face wax",
+      "rating": "4.78",
+      "price": "Starts at ₹69",
+      "details": "RICA peel-off wax to remove even the tiniest, hard to remove hair"
+    },
+    {
+      "head4": "Facial & cleanup"
+    },
+    {
+      "name": "Instant glow facials",
+      "rating": "4.79",
+      "price": "Starts at ₹699",
+      "details": "To make your skin look radiant & eye-catching"
+    },
+    {
+      "name": "Hydration facials",
+      "rating": "4.80",
+      "price": "Starts at ₹749",
+      "details": "To make your skin feel moisturised & nourished"
+    },
+    {
+      "name": "Anti-ageing facials",
+      "rating": "4.80",
+      "price": "Starts at ₹699",
+      "details": "To make your skin feel firm & youthful"
+    },
+    {
+      "name": "Oil control facials",
+      "rating": "4.77",
+      "price": "Starts at ₹899",
+      "details": "To make your skin feel smooth & less greasy"
+    },
+    {
+      "name": "Gentle care facials",
+      "rating": "4.77",
+      "price": "Starts at ₹899",
+      "details": "To make your skin feel soft & clean"
+    },
+    {
+      "name": "Tan removal facials",
+      "rating": "4.77",
+      "price": "Starts at ₹1,299",
+      "details": "To make your skin feel clear & restored"
+    },
+    {
+      "head5": "Manicure"
+    },
+    {
+      "name": "Cut, file & polish",
+      "rating": "4.76",
+      "price": "₹149",
+      "details": "Quick & basic nail grooming session with a wide range of nail polishes"
+    },
+    {
+      "name": "Elysian British rose manicure",
+      "rating": "4.73",
+      "price": "₹649",
+      "details": "Rose salt soak, scrub, cream massage, mask for soft & nourished hands"
+    },
+    {
+      "name": "Elysian chocolate & vanilla manicure",
+      "rating": "4.74",
+      "price": "₹899",
+      "details": "Relaxing swell gel soak, scrub, cream massage, mask for fresh & fragrant hands"
+    },
+    {
+      "name": "Elysian candle spa manicure",
+      "rating": "4.73",
+      "price": "₹1,049",
+      "details": "Soothing fizz ball therapy, scrub, wax massage, double masks for gorgeous hands"
+    },
+    {
+      "head6": "Pedicure"
+    },
+    {
+      "name": "Cut, file & polish (feet)",
+      "rating": "4.77",
+      "price": "₹199",
+      "details": "Quick & basic nail grooming session with a wide range of nail polishes"
+    },
+    {
+      "name": "Elysian British rose pedicure",
+      "rating": "4.75",
+      "price": "₹749",
+      "details": "Rose salt soak, scrub, cream massage, mask for soft & nourished feet"
+    },
+    {
+      "name": "Elysian chocolate & vanilla pedicure",
+      "rating": "4.74",
+      "price": "₹949",
+      "details": "Relaxing swell gel soak, scrub, cream massage, mask for fresh & fragrant feet"
+    },
+    {
+      "name": "Elysian Candle Spa Pedicure",
+      "rating": "4.76",
+      "price": "₹1,249",
+      "details": "Soothing fizz ball therapy, scrub, wax massage, double masks for gorgeous feet"
+    },
+    {
+      "head7": "Threading & face wax"
+    },
+    {
+      "name": "Chin waxing",
+      "rating": "4.78",
+      "price": "₹99"
+    },
+    {
+      "name": "Sidelocks waxing",
+      "rating": "4.78",
+      "price": "₹99"
+    },
+    {
+      "name": "Forehead waxing",
+      "rating": "4.78",
+      "price": "₹99"
+    },
+    {
+      "name": "Jawline waxing",
+      "rating": "4.80",
+      "price": "₹99"
+    },
+    {
+      "name": "Neck waxing",
+      "rating": "4.80",
+      "price": "₹199"
+    },
+    {
+      "name": "Full face waxing",
+      "rating": "4.76",
+      "price": "₹399"
+    },
+    {
+      "name": "Upper lip waxing",
+      "rating": "4.77",
+      "price": "₹69"
+    },
+    {
+      "name": "Eyebrow threading",
+      "rating": "4.78",
+      "price": "₹29"
+    },
+    {
+      "name": "Chin Threading",
+      "rating": "4.78",
+      "price": "₹29"
+    },
+    {
+      "name": "Sidelocks threading",
+      "rating": "4.78",
+      "price": "₹49"
+    },
+    {
+      "name": "Forehead threading",
+      "rating": "4.79",
+      "price": "₹59"
+    },
+    {
+      "name": "Jawline threading",
+      "rating": "4.79",
+      "price": "₹99"
+    },
+    {
+      "name": "Neck threading",
+      "rating": "4.76",
+      "price": "₹149"
+    },
+    {
+      "name": "Upper lip threading",
+      "rating": "4.78",
+      "price": "₹19"
+    },
+    {
+      "name": "Full face threading",
+      "rating": "4.77",
+      "price": "₹149"
+    },
+    {
+      "head8": "Bleach & detan"
+    },
+    {
+      "name": "Bleach",
+      "rating": "4.77",
+      "price": "Starts at ₹299",
+      "details": "Treatment to remove dark spots, tan, pigmentation, blemishes, etc."
+    },
+    {
+      "name": "Detan",
+      "rating": "4.77",
+      "price": "Starts at ₹349",
+      "details": "RAAGA detan pack infused with milk, honey, fruit extracts to remove tan"
+    },
+    {
+      "head9": "Hair colour & care"
+    },
+    {
+      "name": "Hair colour application",
+      "rating": "4.74",
+      "price": "Starts at ₹249",
+      "details": "Colour/henna application by experts to give your hair a natural look & shine"
+    },
+    {
+      "name": "Head massage",
+      "rating": "4.77",
+      "price": "₹299",
+      "details": "Relaxing oil massage to relieve stress & promote hair growth"
+    },
+    {
+      "name": "Loreal Hair Spa",
+      "rating": "4.67",
+      "price": "Starts at ₹1,249",
+      "details": "Therapeutic hair spa treatment for healthy and nourished hair"
+    },
+    {
+      "head10": "Customer reviews"
+    }
+  ]
+}
