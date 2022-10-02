@@ -12,7 +12,7 @@ import {
   VStack,
   GridItem
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import "./Home.css";
@@ -132,6 +132,8 @@ let arr6 = [
 ];
 
 export default function Home() {
+
+ 
   return (
     <div className="total">
       <div className="Body">
@@ -162,7 +164,7 @@ export default function Home() {
           position="absolute"
           top="470px"
         >
-            <Navbar2  />
+          <Navbar2 />
         </Container>
 
         <Container
@@ -181,8 +183,10 @@ export default function Home() {
         justifyContent="center"
         alignItems="center"
       >
-        <Container maxW="1000px">
-          <Grid templateColumns="repeat(4, 1fr)">
+        <Container maxW="1500px">
+          <Grid
+            templateColumns={{ base: "repeat(3, 1fr)", lg: "repeat(5, 1fr)" }}
+          >
             <Box cursor="pointer">
               <Image
                 src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1662377264033-320229.png"
@@ -191,19 +195,25 @@ export default function Home() {
             </Box>
             <Box>
               <Image
-                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1662377264033-320229.png"
+                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/luminosity/1661745697178-c83202.png"
                 w="90%"
               />
             </Box>
             <Box>
               <Image
-                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1662377264033-320229.png"
+                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1663945434053-273a1a.jpeg"
                 w="90%"
               />
             </Box>
             <Box>
               <Image
-                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1662377264033-320229.png"
+                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1663935764851-d1a3e2.jpeg"
+                w="90%"
+              />
+            </Box>
+            <Box>
+              <Image
+                src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1663937862584-33cc6c.jpeg"
                 w="90%"
               />
             </Box>
@@ -220,14 +230,17 @@ export default function Home() {
       >
         <Container maxW="1000px">
           <Heading p={8}>New Category Launches</Heading>
-          <Grid templateColumns="repeat(4, 1fr)" p={9}>
+          <Grid
+            templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            p={9}
+          >
             {arr3.map((el) => (
               <Box2 image={el.image} title={el.title} id={el.ID} />
             ))}
           </Grid>
         </Container>
       </Flex>
-{/* //files */}
+      {/* //files */}
       <Flex
         mt="20px"
         bg="white"
@@ -386,36 +399,7 @@ export default function Home() {
         <Box>
           <Text>© 2014-22 UrbanClap Technologies India Pvt. Ltd.</Text>
         </Box>
-        <Box>
-          <Flex>
-            <Image
-              w="4%"
-              src="https://diylogodesigns.com/wp-content/uploads/2016/05/instagram-Logo-PNG-Transparent-Background-download.png"
-            />
-            {/* <Image
-              w="4%"
-              src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png"
-              alt="twiiter"
-            />
-            <Image
-              w="4%"
-              src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png"
-              alt="twiiter"
-            />
-            <Image
-              w="4%"
-              src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png"
-              alt="twiiter"
-            /> */}
-          </Flex>
-        </Box>
-        <Box>
-          <Image
-            w="4%"
-            src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png"
-            alt="twiiter"
-          />
-        </Box>
+       
       </Grid>
     </div>
   );

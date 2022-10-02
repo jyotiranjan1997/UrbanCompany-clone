@@ -49,7 +49,7 @@ export default function Navbar2() {
         boxShadow="2xl"
         rounded="md"
       >
-        <Link to="/products">
+        <Link to="/womensaloon">
           <Box
             w="100%"
             p={{ base: 0, lg: 2 }}
@@ -68,7 +68,7 @@ export default function Navbar2() {
             <Text mt="15px">{arr[0].title}</Text>
           </Box>
         </Link>
-        <Link to="/products">
+        <Link to="/womensaloon">
           <Box
             w="100%"
             p={{ base: 0, lg: 2 }}
@@ -87,7 +87,7 @@ export default function Navbar2() {
             <Text mt="15px">{arr[1].title}</Text>
           </Box>
         </Link>
-        <Link to="/products">
+        <Link to="/mensaloon">
           <Box
             w="100%"
             p={{ base: 0, lg: 2 }}
@@ -106,7 +106,7 @@ export default function Navbar2() {
             <Text mt="15px">{arr[2].title}</Text>
           </Box>
         </Link>
-        <Link to="/products">
+        <Link to="/mensaloon">
           <Box
             w="100%"
             p={{ base: 0, lg: 2 }}
@@ -125,7 +125,7 @@ export default function Navbar2() {
             <Text mt="15px">{arr[3].title}</Text>
           </Box>
         </Link>
-        <Link to="/products">
+        <Link to="/womensaloon">
           <Box
             w="100%"
             p={{ base: 0, lg: 2 }}

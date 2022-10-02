@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Grid,
@@ -7,37 +7,49 @@ import {
   Button,
   Spacer,
   Show,
-  Hide,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverHeader,
-  PopoverBody,
-  PopoverFooter,
-  PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
-  Badge,
   Center,
   Container,
   Heading,
   Text,
-  HStack,
+  VStack,
+  Divider,
 } from "@chakra-ui/react";
-import { HamburgerIcon, StarIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
-import axios from "axios";
-export default function ProductPage() {
-    const [data, setData] = React.useState([]);
-    
-    React.useEffect(() => {
-        axios
-          .get("http://localhost:3002/selection1")
-          .then((res) => setData(res.data))
-          .catch((err) => console.log("data_not" + err));
-        
-    },[])
+import { selection1, subSelection1 } from "../../db";
+import Reviews from "../../CustomerReviews/Reviews";
+import { HashLink as Link } from "react-router-hash-link";
+import EachProducts from "./EachProducts";
+import Carousel from "../Craousel/Crasousel";
+import Carousels from "../Craousel/Crasousel";
+import CartPagee from "./CartPage";
 
+export default function WomenSaloon() {
+  const [Price, setPrice] = useState(0);
+
+  const handleIt = () => {
+    setPrice("");
+  };
+
+  const handleAdd = (price) => {
+    let pr = "";
+    for (let i = 0; i < price.length; i++) {
+      if (
+        price[i] == "1" ||
+        price[i] === "2" ||
+        price[i] === "3" ||
+        price[i] === "4" ||
+        price[i] === "5" ||
+        price[i] === "6" ||
+        price[i] === "7" ||
+        price[i] === "8" ||
+        price[i] === "9" ||
+        price[i] === "0"
+      ) {
+        pr += price[i];
+      }
+    }
+
+    setPrice(Price + +pr);
+  };
   return (
     <Container maxW="full" p={9}>
       <Flex
@@ -45,6 +57,7 @@ export default function ProductPage() {
         alignItems="center"
         gap="2"
         p={3}
+        pt={0}
         pl="40px"
         pr="40px"
         justifyContent="space-between"
@@ -69,45 +82,24 @@ export default function ProductPage() {
             </Center>
           </Flex>
         </Show>
-        {/* <Hide above="1000px">
-          <Popover>
-            <PopoverTrigger>
-              <Button>
-                <HamburgerIcon w={8} h={8} onClick={handleSideBar} />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent>
-              <PopoverArrow />
-              <PopoverCloseButton />
 
-              <PopoverBody color="black">
-                <Grid gap="20px" p={8}>
-                  <Link>Blog</Link>
-                  <Link>Register As A Professional</Link>
-                  <Link>
-                    <Login />
-                  </Link>
-                </Grid>
-              </PopoverBody>
-            </PopoverContent>
-          </Popover>
-        </Hide> */}
         <Box></Box>
       </Flex>
-      <hr />
-      <Container maxW="full" p={9}>
+      <Divider />
+      <Container maxW="full" p={4}>
         <Grid
           templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
+          justifyContent="center"
+          alignItems="center"
         >
           <Box>
             <Heading>Women Salon</Heading>
           </Box>
           <Box>
-            <video>
-              <source src="https://content.urbanclap.com/videos/growth/luminosity/1656934896109-0686ed/1656934896109-0686ed.m3u8?q=1664557578250" />
-            </video>
+            <Carousels />
           </Box>
         </Grid>
+        <Divider borderWidth="2px" />
       </Container>
 
       <Container
@@ -117,17 +109,17 @@ export default function ProductPage() {
           /* Safari */ position: "sticky",
           top: "0",
         }}
+        zIndex="5"
       >
         <Grid
-          gap="5"
           justifyContent="center"
-          templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(12, 1fr)" }}
+          templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(10, 1fr)" }}
           bg="white"
-          p={3}
+          p={2}
           mt="20px"
           rounded="md"
         >
-          <Link to="/products">
+          <Link to="#bestsellerspackages" smooth>
             <Box w="100%" p={2} _hover={{ bg: "#E2E8F0" }} variant="ghost">
               <Center>
                 <Image
@@ -140,7 +132,7 @@ export default function ProductPage() {
               <Text mt="15px">BestSellers Packages</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Make" smooth>
             <Box w="100%" p={2} _hover={{ bg: "#E2E8F0" }} variant="ghost">
               <Center>
                 <Image
@@ -150,10 +142,12 @@ export default function ProductPage() {
                 />
               </Center>
 
-              <Text mt="15px">Make your own Packages</Text>
+              <Text mt="15px" noOfLines={2}>
+                Make your own Packages
+              </Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#waxing" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -166,7 +160,7 @@ export default function ProductPage() {
               <Text mt="15px">Waxing</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Facial" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -179,7 +173,7 @@ export default function ProductPage() {
               <Text mt="15px">Facial & Cleanup</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Manicure" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -192,7 +186,7 @@ export default function ProductPage() {
               <Text mt="15px">Manicure</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Pedicure" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -205,7 +199,7 @@ export default function ProductPage() {
               <Text mt="15px">Pedicure</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Threading" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -218,7 +212,7 @@ export default function ProductPage() {
               <Text mt="15px">Threading & Face wax</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Bleach" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -231,7 +225,7 @@ export default function ProductPage() {
               <Text mt="15px">Bleach & detan</Text>
             </Box>
           </Link>
-          <Link to="/products">
+          <Link to="#Haircolour" smooth>
             <Box w="100%" _hover={{ bg: "#E2E8F0" }} p={2} variant="ghost">
               <Center>
                 <Image
@@ -245,41 +239,91 @@ export default function ProductPage() {
             </Box>
           </Link>
         </Grid>
-        <hr></hr>
+        <Divider orientation="horizontal" />
       </Container>
-      <HStack p={8}>
-        <Heading> Bestseller Packages</Heading>
-        <Box>
-          {data.map((el) => (
-            <Box
-              maxW="sm"
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-            >
-              <Text> PACKAGE</Text>
+      <Flex mt="20px">
+        <Box w="full">
+          <EachProducts
+            id={"bestsellerspackages"}
+            heading={subSelection1[0]}
+            products={selection1[0].BestsellerPackages}
+            handleAdd={handleAdd}
+          />
+          <EachProducts
+            id={"Make"}
+            heading={subSelection1[1]}
+            products={selection1[1].Makeyourownpackage}
+            handleAdd={handleAdd}
+          />
+          <EachProducts
+            id={"waxing"}
+            heading={subSelection1[2]}
+            products={selection1[2].Waxing}
+            handleAdd={handleAdd}
+          />
+          <EachProducts
+            id={"Facial"}
+            heading={subSelection1[3]}
+            products={selection1[3].Facial}
+            handleAdd={handleAdd}
+          />
+          <EachProducts
+            id={"Manicure"}
+            heading={subSelection1[4]}
+            products={selection1[4].Manicure}
+            handleAdd={handleAdd}
+          />
+          <EachProducts
+            id={"Pedicure"}
+            heading={subSelection1[5]}
+            products={selection1[5].Pedicure}
+            handleAdd={handleAdd}
+          />
+          <EachProducts
+            id={"Threading"}
+            heading={subSelection1[6]}
+            products={selection1[6].Threading}
+            handleAdd={handleAdd}
+          />
 
-              <Box
-                mt="1"
-                fontWeight="semibold"
-                as="h4"
-                lineHeight="tight"
-                noOfLines={1}
-              >
-                {el.name}
-              </Box>
-
-              <Box>
-                <StarIcon color="gray.400" />
-                {el.rating}
-                <Box as="span" color="gray.600" fontSize="sm">
-                  (190K)
-                </Box>
-              </Box>
-            </Box>
-          ))}
+          <Reviews />
         </Box>
-      </HStack>
+
+        <Divider orientation="vertical" />
+
+        <VStack w="full"> </VStack>
+      </Flex>
+      <Flex
+        gap="50px"
+        p={8}
+        ml="65%"
+        mt="40%"
+        display={Price == 0 ? "none" : "flex"}
+        sx={{
+          position: "-webkit-sticky",
+          /* Safari */ position: "fixed",
+          top: "0",
+        }}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Heading>₹ {Price}</Heading>
+
+        <Button bg="blue.400">
+          <CartPagee total={Price} handleit={handleIt} />
+        </Button>
+      </Flex>
+      <Grid bg="black" color="white" p={6} templateColumns="repeat(4, 1fr)">
+        <Box>
+          <Image
+            w="30%"
+            src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"
+          />
+        </Box>
+        <Box>
+          <Text>© 2014-22 UrbanClap Technologies India Pvt. Ltd.</Text>
+        </Box>
+      </Grid>
     </Container>
   );
 }

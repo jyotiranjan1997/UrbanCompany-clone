@@ -19,11 +19,14 @@ import {
   Center
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
 
+
 export default function Navbar() {
+
+  
   const handleSideBar = () => {};
 
   return (
@@ -56,7 +59,9 @@ export default function Navbar() {
           </Center>
 
           <Link>
+            
             <Center>
+              
               <Login />
             </Center>
           </Link>
